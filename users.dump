@@ -1,0 +1,12 @@
+-- Sample data insertion for testing
+INSERT INTO `employees` (`employee_id`, `name`, `email`, `department`, `position`, `hire_date`) VALUES
+('EMP001', 'John Doe', 'john@example.com', 'IT', 'Developer', '2020-01-15'),
+('EMP002', 'Jane Smith', 'jane@example.com', 'HR', 'Manager', '2019-05-20');
+
+INSERT INTO `managers` (`name`, `email`, `department`) VALUES
+('Michael Brown', 'michael@example.com', 'IT'),
+('Sarah Johnson', 'sarah@example.com', 'HR');
+
+INSERT INTO `exit_requests` (`employee_id`, `request_date`, `last_working_day`, `reason`, `status`) VALUES
+(1, CURDATE(), '2023-12-31', 'Career change', 'Pending'),
+(2, CURDATE(), '2023-11-30', 'Relocation', 'Interview Scheduled');
