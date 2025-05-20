@@ -29,8 +29,8 @@ $status_filter = isset($_GET['status']) ? $_GET['status'] : 'all';
                 <tr>
                     <th>ID</th>
                     <th>Employee</th>
-                    <th>Requested On</th>
                     <th>Last Working Day</th>
+                    <th>Requested On</th>
                     <th>Status</th>
                     <th>Reason</th>
                     <th>Actions</th>
@@ -55,8 +55,8 @@ $status_filter = isset($_GET['status']) ? $_GET['status'] : 'all';
                     echo "<tr>
                             <td>{$row['id']}</td>
                             <td>{$row['name']} (ID: {$row['employee_id']})</td>
-                            <td>{$row['request_date']}</td>
                             <td>{$row['last_working_day']}</td>
+                            <td>{$row['request_date']}</td>
                             <td><span class='badge bg-".($row['status']=='Pending'?'warning':'success')."'>{$row['status']}</span></td>
                             <td>{$row['reason']}</td>
                             <td>
